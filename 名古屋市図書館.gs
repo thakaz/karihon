@@ -107,7 +107,7 @@ function main(){
   
   Array.prototype.concat.apply([],flatten);
   
-  Logger.log(flatten);
+//  Logger.log(flatten);
 
   flatten.filter
   

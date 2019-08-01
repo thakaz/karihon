@@ -115,7 +115,7 @@ function main2(){
   //タイトルの抽出
   itemTitle.forEach(function(value,index,array){
     if (String(value).indexOf("DOCTYPE") == -1){
-      titleArray.push(value.match(/\s*(\S*)\s*/)[1]);
+      titleArray.push(value);
       libArray.push("県図書館");
     }
   })
@@ -135,7 +135,7 @@ function main2(){
   
   Array.prototype.concat.apply([],flatten);
   
-  Logger.log(flatten);
+ // Logger.log(flatten);
 
   flatten.filter
   
